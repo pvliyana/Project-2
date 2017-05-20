@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B108C311ECF60E7008C21A0 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B108C301ECF60E7008C21A0 /* CartTableViewController.swift */; };
+		9B108C331ECF6157008C21A0 /* CupCakeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B108C321ECF6157008C21A0 /* CupCakeMenuViewController.swift */; };
 		9BC322491EB2453F00FF9EC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC322481EB2453F00FF9EC6 /* AppDelegate.swift */; };
 		9BC3224B1EB2454000FF9EC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3224A1EB2454000FF9EC6 /* ViewController.swift */; };
 		9BC3224E1EB2454000FF9EC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC3224C1EB2454000FF9EC6 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B108C301ECF60E7008C21A0 /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		9B108C321ECF6157008C21A0 /* CupCakeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CupCakeMenuViewController.swift; sourceTree = "<group>"; };
 		9BC322451EB2453F00FF9EC6 /* SIT206Ass2_215421142.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIT206Ass2_215421142.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC322481EB2453F00FF9EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BC3224A1EB2454000FF9EC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				9BC3224F1EB2454100FF9EC6 /* Assets.xcassets */,
 				9BC322511EB2454200FF9EC6 /* LaunchScreen.storyboard */,
 				9BC322541EB2454200FF9EC6 /* Info.plist */,
+				9B108C301ECF60E7008C21A0 /* CartTableViewController.swift */,
+				9B108C321ECF6157008C21A0 /* CupCakeMenuViewController.swift */,
 			);
 			path = SIT206Ass2_215421142;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC3224B1EB2454000FF9EC6 /* ViewController.swift in Sources */,
+				9B108C311ECF60E7008C21A0 /* CartTableViewController.swift in Sources */,
+				9B108C331ECF6157008C21A0 /* CupCakeMenuViewController.swift in Sources */,
 				9BC322491EB2453F00FF9EC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +310,7 @@
 				9BC322591EB2454200FF9EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
