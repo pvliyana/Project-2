@@ -529,7 +529,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1h-QM-Eh9">
                                                     <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button" backgroundImage="51Pm8XaheDL._SY355_"/>
+                                                    <state key="normal" backgroundImage="51Pm8XaheDL._SY355_"/>
                                                     <connections>
                                                         <segue destination="flb-m7-Hga" kind="show" id="wDO-Yd-fCm"/>
                                                     </connections>
@@ -548,7 +548,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p00-Kd-T11">
                                                     <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button" backgroundImage="Pretty-Cupcakes-cupcakes-32426889-500-500"/>
+                                                    <state key="normal" backgroundImage="Pretty-Cupcakes-cupcakes-32426889-500-500"/>
                                                     <connections>
                                                         <segue destination="vAA-wE-cre" kind="show" id="Xf6-Be-SCy"/>
                                                     </connections>
@@ -958,7 +958,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" textLabel="t5V-se-pf6" detailTextLabel="W1v-Ay-5em" style="IBUITableViewCellStyleValue1" id="1eq-YZ-aDJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartCell" textLabel="t5V-se-pf6" detailTextLabel="W1v-Ay-5em" style="IBUITableViewCellStyleValue1" id="1eq-YZ-aDJ">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1eq-YZ-aDJ" id="r9p-GT-Ama">
@@ -1064,8 +1064,9 @@
                                             </state>
                                             <connections>
                                                 <action selector="AddToCart:" destination="flb-m7-Hga" eventType="touchUpInside" id="vj6-et-bZz"/>
+                                                <action selector="addItems:" destination="flb-m7-Hga" eventType="touchUpInside" id="eMK-1j-YYz"/>
                                                 <action selector="addToCart:" destination="flb-m7-Hga" eventType="touchUpInside" id="n7p-8I-5Bt"/>
-                                                <segue destination="d5p-s6-6Uu" kind="show" id="M1g-A0-nHr"/>
+                                                <segue destination="d5p-s6-6Uu" kind="show" identifier="cartSegue" id="M1g-A0-nHr"/>
                                             </connections>
                                         </button>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="enhanced-21923-1454710962-2" translatesAutoresizingMaskIntoConstraints="NO" id="jvu-EZ-Rrw">
@@ -1087,7 +1088,7 @@
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <connections>
-                                                <segue destination="d5p-s6-6Uu" kind="show" identifier="itemToCartSegue" id="Hkg-HI-XBR"/>
+                                                <segue destination="d5p-s6-6Uu" kind="show" identifier="cartSegue" id="Hkg-HI-XBR"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Qty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puw-KW-Z36">
@@ -1100,14 +1101,6 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Qty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmi-OY-0Pf">
                                             <rect key="frame" x="167" y="110" width="160" height="37"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price: AU$ 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GT9-NP-30S">
-                                            <rect key="frame" x="167" y="73" width="160" height="37"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1136,6 +1129,13 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Price: $5" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s3h-oW-eDT">
+                                            <rect key="frame" x="167" y="75" width="145" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
                                     </subviews>
                                 </view>
                                 <blurEffect style="light"/>
@@ -1144,7 +1144,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="inputName" destination="Z1t-v1-ClL" id="QGF-0M-caa"/>
+                        <outlet property="inputprice" destination="s3h-oW-eDT" id="iQx-fE-1xN"/>
+                        <outlet property="inputqty" destination="rC6-y3-wdY" id="kQP-Gn-XJv"/>
                         <outlet property="itemName" destination="Z1t-v1-ClL" id="m0m-BL-FaQ"/>
+                        <outlet property="name" destination="Z1t-v1-ClL" id="HQs-A7-9s8"/>
+                        <outlet property="price" destination="s3h-oW-eDT" id="Aob-pM-dFQ"/>
                         <outlet property="qty" destination="rC6-y3-wdY" id="Gnx-kY-2rZ"/>
                     </connections>
                 </viewController>
@@ -1298,7 +1303,7 @@
         <image name="images-2" width="192" height="144"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ar8-DQ-37m"/>
+        <segue reference="M1g-A0-nHr"/>
         <segue reference="6su-zM-tgQ"/>
     </inferredMetricsTieBreakers>
 </document>

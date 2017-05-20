@@ -10,50 +10,42 @@ import UIKit
 
 class CupCakeMenuViewController: UIViewController {
 
-    //var cartController : UIStoryboardSegue
-    @IBOutlet weak var itemName: UITextField!
-    
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var price: UITextField!
     @IBOutlet weak var qty: UITextField!
-   
-    @IBAction func AddToCart(_ sender: Any) {
-        
-        if qty.text != nil{
-            performSegue(withIdentifier: "itemToCartSegue", sender: <#T##Any?#>)
-        }
-    }
-    
-    override func prepare( for: UIStoryboardSegue, sender: Any?){
-        if (segue.identifier == "itemToCartSegue"){
-            let cartViewController = segue.desination as! CartTableViewController
-            cartViewController.name = itemName.text!
-            cartViewController.quantity = qty.text!
-        }
-        
-        
-    }
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        Utilities.loadItems()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    @IBAction func addItems(_ sender: Any) {
+        if (qty.text != "")
+        {
+            performSegue(withIdentifier: "cartSegue", sender: self)
+            //  items.append(qty.text!)
+            //  items.append(price.text!)
+            // items.append(name.text!)
+            // input.text = ""
+        }
     }
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        let Cart = segue.destination as! CartTableViewController
+        Cart.itemsName = name.text!
+        Cart.itemsPrice = price.text!
+        Cart.itemsQty = qty.text!
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
+
