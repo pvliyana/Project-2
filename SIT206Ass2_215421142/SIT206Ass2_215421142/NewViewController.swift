@@ -1,26 +1,28 @@
 //
-//  CartTableViewController.swift
+//  NewViewController.swift
 //  SIT206Ass2_215421142
 //
-//  Created by parami on 19/5/17.
+//  Created by parami on 20/5/17.
 //  Copyright © 2017 Deakin. All rights reserved.
 //
 
 import UIKit
 
-class CartTableViewController: UITableViewController {
+class NewViewController: UIViewController, UITableViewDelegate ,UITableViewDataSource{
 
+    //@IBOutlet weak var myTable: UITableView!
+    
     var itemsName = String()
     var itemsPrice = String()
     var itemsQty = String()
     
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return (Utilities.items.count)
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {let cell = tableView.dequeueReusableCell(withIdentifier: "cartCell", for: indexPath)
         
         //cell.textLabel?.text = "\(Utilities.items[indexPath.row].itemName), \(Utilities.items[indexPath.row].itemPrice)"
@@ -48,13 +50,12 @@ class CartTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             Utilities.items.remove(at: indexPath.row)
-            self.tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
-
 }
 
 

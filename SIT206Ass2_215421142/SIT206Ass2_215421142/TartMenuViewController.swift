@@ -1,14 +1,14 @@
 //
-//  CupCakeMenuViewController.swift
+//  TartMenuViewController.swift
 //  SIT206Ass2_215421142
 //
-//  Created by parami on 19/5/17.
+//  Created by parami on 21/5/17.
 //  Copyright © 2017 Deakin. All rights reserved.
 //
 
 import UIKit
 
-class CupCakeMenuViewController: UIViewController {
+class TartMenuViewController: UIViewController {
 
     @IBOutlet weak var nameOne: UITextField!
     @IBOutlet weak var priceOne: UITextField!
@@ -17,9 +17,9 @@ class CupCakeMenuViewController: UIViewController {
     @IBOutlet weak var nameTwo: UITextField!
     
     @IBOutlet weak var priceTwo: UITextField!
-
+    
     @IBOutlet weak var qtyTwo: UITextField!
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Utilities.loadItems()
@@ -28,50 +28,47 @@ class CupCakeMenuViewController: UIViewController {
     
     
     @IBAction func addItemOneToCart(_ sender: Any) {
-        
-           if (qtyOne.text != "")
-            {
+        if (qtyOne.text != "")
+        {
             performSegue(withIdentifier: "cartSegueOne", sender: self)
-                 //qtyOne.text = " "
-            }
-       
-        
+            
         }
-    
+    }
     
     @IBAction func addItemTwoToCart(_ sender: Any) {
         if (qtyTwo.text != "")
         {
             performSegue(withIdentifier: "cartSegueTwo", sender: self)
         }
-    }
-    
 
-    
-      override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        
-            if(segue.identifier == "cartSegueOne"){
-                
-            let Cart = segue.destination as! CartTableViewController
-                Cart.itemsName = nameOne.text!
-                var total : Int = 0
-                total = Int(priceOne.text!)! * Int(qtyOne.text!)!
-                Cart.itemsPrice = String(total)
-                Cart.itemsQty = qtyOne.text!
-            }
-        
-            if(segue.identifier == "cartSegueTwo"){
-                
-            let CartTwo = segue.destination as! CartTableViewController
-                CartTwo.itemsName = nameTwo.text!
-                var total : Int = 0
-                total = Int(priceTwo.text!)! * Int(qtyTwo.text!)!
-                CartTwo.itemsPrice = String(total)
-                CartTwo.itemsQty = qtyTwo.text!
-            }
     }
     
-   
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        if(segue.identifier == "cartSegueOne"){
+            
+            let Cart = segue.destination as! CartTableViewController
+            Cart.itemsName = nameOne.text!
+            var total : Int = 0
+            total = Int(priceOne.text!)! * Int(qtyOne.text!)!
+            Cart.itemsPrice = String(total)
+            Cart.itemsQty = qtyOne.text!
+        }
+        
+        if(segue.identifier == "cartSegueTwo"){
+            
+            let CartTwo = segue.destination as! CartTableViewController
+            CartTwo.itemsName = nameTwo.text!
+            var total : Int = 0
+            total = Int(priceTwo.text!)! * Int(qtyTwo.text!)!
+            CartTwo.itemsPrice = String(total)
+            CartTwo.itemsQty = qtyTwo.text!
+        }
+    }
+    
+    
     
     
     override func didReceiveMemoryWarning() {

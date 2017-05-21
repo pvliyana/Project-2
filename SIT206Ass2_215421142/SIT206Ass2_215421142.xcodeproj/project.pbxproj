@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B04BD101ED19D0700F58E6F /* TartMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B04BD0F1ED19D0700F58E6F /* TartMenuViewController.swift */; };
+		9B04BD121ED19D2300F58E6F /* CakeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B04BD111ED19D2300F58E6F /* CakeMenuViewController.swift */; };
+		9B04BD141ED19D3200F58E6F /* PastryMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B04BD131ED19D3200F58E6F /* PastryMenuViewController.swift */; };
 		9B108C311ECF60E7008C21A0 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B108C301ECF60E7008C21A0 /* CartTableViewController.swift */; };
 		9B108C331ECF6157008C21A0 /* CupCakeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B108C321ECF6157008C21A0 /* CupCakeMenuViewController.swift */; };
+		9B8145AF1ED15058002DA5DE /* CategoryMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8145AE1ED15058002DA5DE /* CategoryMenuViewController.swift */; };
+		9B8145B11ED16D8F002DA5DE /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8145B01ED16D8F002DA5DE /* NewViewController.swift */; };
 		9B89BF4C1ED0DFB20078C71C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B89BF4B1ED0DFB20078C71C /* Item.swift */; };
 		9BC322491EB2453F00FF9EC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC322481EB2453F00FF9EC6 /* AppDelegate.swift */; };
 		9BC3224B1EB2454000FF9EC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC3224A1EB2454000FF9EC6 /* ViewController.swift */; };
@@ -18,8 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B04BD0F1ED19D0700F58E6F /* TartMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TartMenuViewController.swift; sourceTree = "<group>"; };
+		9B04BD111ED19D2300F58E6F /* CakeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeMenuViewController.swift; sourceTree = "<group>"; };
+		9B04BD131ED19D3200F58E6F /* PastryMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastryMenuViewController.swift; sourceTree = "<group>"; };
 		9B108C301ECF60E7008C21A0 /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
 		9B108C321ECF6157008C21A0 /* CupCakeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CupCakeMenuViewController.swift; sourceTree = "<group>"; };
+		9B8145AE1ED15058002DA5DE /* CategoryMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryMenuViewController.swift; sourceTree = "<group>"; };
+		9B8145B01ED16D8F002DA5DE /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		9B89BF4B1ED0DFB20078C71C /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9BC322451EB2453F00FF9EC6 /* SIT206Ass2_215421142.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIT206Ass2_215421142.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC322481EB2453F00FF9EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +79,11 @@
 				9B108C301ECF60E7008C21A0 /* CartTableViewController.swift */,
 				9B108C321ECF6157008C21A0 /* CupCakeMenuViewController.swift */,
 				9B89BF4B1ED0DFB20078C71C /* Item.swift */,
+				9B8145AE1ED15058002DA5DE /* CategoryMenuViewController.swift */,
+				9B8145B01ED16D8F002DA5DE /* NewViewController.swift */,
+				9B04BD0F1ED19D0700F58E6F /* TartMenuViewController.swift */,
+				9B04BD111ED19D2300F58E6F /* CakeMenuViewController.swift */,
+				9B04BD131ED19D3200F58E6F /* PastryMenuViewController.swift */,
 			);
 			path = SIT206Ass2_215421142;
 			sourceTree = "<group>";
@@ -147,9 +162,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B89BF4C1ED0DFB20078C71C /* Item.swift in Sources */,
+				9B04BD121ED19D2300F58E6F /* CakeMenuViewController.swift in Sources */,
 				9BC3224B1EB2454000FF9EC6 /* ViewController.swift in Sources */,
+				9B8145B11ED16D8F002DA5DE /* NewViewController.swift in Sources */,
+				9B04BD141ED19D3200F58E6F /* PastryMenuViewController.swift in Sources */,
 				9B108C311ECF60E7008C21A0 /* CartTableViewController.swift in Sources */,
 				9B108C331ECF6157008C21A0 /* CupCakeMenuViewController.swift in Sources */,
+				9B8145AF1ED15058002DA5DE /* CategoryMenuViewController.swift in Sources */,
+				9B04BD101ED19D0700F58E6F /* TartMenuViewController.swift in Sources */,
 				9BC322491EB2453F00FF9EC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
