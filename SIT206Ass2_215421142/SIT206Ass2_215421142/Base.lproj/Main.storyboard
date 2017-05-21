@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csv-iW-Bbg">
-                                <rect key="frame" x="25" y="376" width="334" height="46"/>
+                                <rect key="frame" x="25" y="420" width="334" height="46"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="9" maxY="0.0"/>
@@ -58,7 +58,7 @@
                             </button>
                         </subviews>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Main Menu" id="NdV-gK-Aao"/>
+                    <tabBarItem key="tabBarItem" title="Cart" selectedImage="Shopping Cart-26" id="NdV-gK-Aao"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -69,7 +69,7 @@
         <!--CustomerDetails-->
         <scene sceneID="YY3-js-1wr">
             <objects>
-                <viewController title="CustomerDetails" id="o7P-ve-Mz3" sceneMemberID="viewController">
+                <viewController title="CustomerDetails" id="o7P-ve-Mz3" customClass="CustomerDetailsViewController" customModule="SIT206Ass2_215421142" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K2h-VE-qNS"/>
                         <viewControllerLayoutGuide type="bottom" id="yHg-CX-tOy"/>
@@ -115,7 +115,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="9jK-n0-Rmi" kind="show" id="329-Y2-a62"/>
+                                    <segue destination="9jK-n0-Rmi" kind="show" identifier="paymentSegue" id="329-Y2-a62"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHA-lJ-3L1">
@@ -160,7 +160,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrf-4l-AiD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrf-4l-AiD">
                                 <rect key="frame" x="16" y="292" width="343" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -174,7 +174,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDO-9J-O1H">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="state" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDO-9J-O1H">
                                 <rect key="frame" x="16" y="342" width="343" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -182,7 +182,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gB-Lg-Cxn">
-                                <rect key="frame" x="104" y="348" width="247" height="30"/>
+                                <rect key="frame" x="104" y="348" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q5f-Ui-zW0">
+                                <rect key="frame" x="272" y="348" width="79" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -223,13 +230,36 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suburb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qc-yY-v7g">
+                                <rect key="frame" x="18" y="303" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ba-Zb-xLK">
+                                <rect key="frame" x="195" y="353" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Email" destination="ygF-nm-exQ" id="NPg-EQ-pkF"/>
+                        <outlet property="address" destination="hW3-gq-byg" id="pfP-XW-gAZ"/>
+                        <outlet property="name" destination="F2u-92-61x" id="HDI-OA-ddN"/>
+                        <outlet property="phone" destination="po7-h8-OVf" id="jrl-KD-Wra"/>
+                        <outlet property="postCode" destination="Q5f-Ui-zW0" id="6Uv-yB-Z3x"/>
+                        <outlet property="state" destination="6gB-Lg-Cxn" id="K9Z-eD-Fvy"/>
+                        <outlet property="suburb" destination="nXP-vP-wKY" id="1gJ-hX-YsY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uyl-4t-n0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2940" y="1970"/>
+            <point key="canvasLocation" x="1493.5999999999999" y="1310.1949025487258"/>
         </scene>
         <!--CakeMenu-->
         <scene sceneID="mGK-t4-nCB">
@@ -376,7 +406,6 @@
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <connections>
-                                                <action selector="addItemOneToCart:" destination="5ir-zn-rUX" eventType="touchUpInside" id="Unn-PN-BG5"/>
                                                 <segue destination="d5p-s6-6Uu" kind="show" identifier="cartSegueOne" id="27f-pj-Zdi"/>
                                             </connections>
                                         </button>
@@ -459,7 +488,6 @@
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <connections>
-                                                <action selector="addItemTwoToCart:" destination="5ir-zn-rUX" eventType="touchUpInside" id="77r-ZU-nzE"/>
                                                 <segue destination="d5p-s6-6Uu" kind="show" identifier="cartSegueTwo" id="YPu-uH-Y3u"/>
                                             </connections>
                                         </button>
@@ -525,7 +553,6 @@
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <connections>
-                                                <action selector="addItemOneToCart:" destination="vAA-wE-cre" eventType="touchUpInside" id="75B-ft-idg"/>
                                                 <segue destination="d5p-s6-6Uu" kind="show" identifier="cartSegueOne" id="FAU-RP-wn0"/>
                                             </connections>
                                         </button>
@@ -541,7 +568,6 @@
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <connections>
-                                                <action selector="addItemTwoToCart:" destination="vAA-wE-cre" eventType="touchUpInside" id="8tg-IS-EnL"/>
                                                 <segue destination="d5p-s6-6Uu" kind="show" identifier="cartSegueTwo" id="HSa-rk-hIJ"/>
                                             </connections>
                                         </button>
@@ -619,10 +645,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="aMz-pw-PwA"/>
-                        <barButtonItem title="Item" id="4mN-cv-Jw7"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="nameOne" destination="5cH-bR-Dch" id="QtJ-Oq-oFs"/>
@@ -688,7 +711,6 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
-                                                <action selector="addItemOneToCart:" destination="jU1-0Y-Ks2" eventType="touchUpInside" id="zyl-KT-irp"/>
                                                 <segue destination="d5p-s6-6Uu" kind="show" identifier="cartSegueOne" id="XOm-AF-tRz"/>
                                             </connections>
                                         </button>
@@ -735,7 +757,6 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
-                                                <action selector="AddItemTwoToCart:" destination="jU1-0Y-Ks2" eventType="touchUpInside" id="hKa-Io-r2S"/>
                                                 <segue destination="d5p-s6-6Uu" kind="show" identifier="cartSegueTwo" id="D32-qv-aws"/>
                                             </connections>
                                         </button>
@@ -794,7 +815,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mz6-ev-oHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2476" y="537"/>
+            <point key="canvasLocation" x="2470" y="100"/>
         </scene>
         <!--DeliveryType-->
         <scene sceneID="gi1-s8-NKM">
@@ -829,39 +850,6 @@
                                     <segue destination="4Td-oj-jiu" kind="show" id="Etg-7i-hBd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsc-t0-fuS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                            </button>
-                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcd-yK-bhD">
-                                <rect key="frame" x="16" y="7" width="113" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                <state key="normal" title="Main Menu">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtH-Ei-dT3">
-                                <rect key="frame" x="236" y="7" width="113" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                <state key="normal" title="Cart">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MU-k9-ppw">
                                 <rect key="frame" x="16" y="410" width="333" height="43"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
@@ -875,6 +863,9 @@
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="4Td-oj-jiu" kind="show" id="km1-jm-DFZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -885,7 +876,7 @@
             </objects>
             <point key="canvasLocation" x="151" y="-967"/>
         </scene>
-        <!--Category Menu View Controller-->
+        <!--Menu-->
         <scene sceneID="vIG-2B-BjT">
             <objects>
                 <viewController id="ecd-N8-EBw" customClass="CategoryMenuViewController" customModule="SIT206Ass2_215421142" customModuleProvider="target" sceneMemberID="viewController">
@@ -957,9 +948,26 @@
                                     <segue destination="jU1-0Y-Ks2" kind="show" id="AFk-GT-tgO"/>
                                 </connections>
                             </button>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWx-tb-4bB">
+                                <rect key="frame" x="258" y="14" width="85" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <state key="normal" title="Cart" image="Shopping Cart-26">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="d5p-s6-6Uu" kind="show" id="0jp-qJ-S0p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Menu" selectedImage="Restaurant-50" id="A4q-DJ-eXz"/>
                     <navigationItem key="navigationItem" id="WXF-49-DWK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUd-w6-Yjf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -979,18 +987,18 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1eq-YZ-aDJ" id="r9p-GT-Ama">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t5V-se-pf6">
-                                            <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="15" y="11" width="34" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W1v-Ay-5em">
-                                            <rect key="frame" x="316" y="12" width="44" height="20.5"/>
+                                            <rect key="frame" x="316" y="11" width="44" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -1038,12 +1046,12 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="HTN-2k-QUX"/>
                         <segue destination="Yjw-rs-nQK" kind="relationship" relationship="viewControllers" id="KvA-Mu-PdW"/>
                         <segue destination="4Td-oj-jiu" kind="relationship" relationship="viewControllers" id="NUj-oJ-vN9"/>
-                        <segue destination="d5p-s6-6Uu" kind="relationship" relationship="viewControllers" id="6TZ-CK-hz5"/>
+                        <segue destination="ecd-N8-EBw" kind="relationship" relationship="viewControllers" id="JcH-QO-lhJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgq-0A-mJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2098" y="-967"/>
+            <point key="canvasLocation" x="-1522" y="-967"/>
         </scene>
         <!--CupCake-->
         <scene sceneID="eHV-Gt-aHv">
@@ -1087,7 +1095,6 @@
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <connections>
-                                                <action selector="addItemOneToCart:" destination="flb-m7-Hga" eventType="touchUpInside" id="0tS-uO-3E2"/>
                                                 <segue destination="d5p-s6-6Uu" kind="show" identifier="cartSegueOne" id="g0P-DQ-Lvt"/>
                                             </connections>
                                         </button>
@@ -1170,7 +1177,6 @@
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
                                             <connections>
-                                                <action selector="addItemTwoToCart:" destination="flb-m7-Hga" eventType="touchUpInside" id="5LP-q1-prK"/>
                                                 <segue destination="d5p-s6-6Uu" kind="show" identifier="cartSegueTwo" id="93Q-OK-yWT"/>
                                             </connections>
                                         </button>
@@ -1200,7 +1206,7 @@
         <!--PaymentDetails-->
         <scene sceneID="nmj-Ti-rll">
             <objects>
-                <viewController title="PaymentDetails" id="9jK-n0-Rmi" sceneMemberID="viewController">
+                <viewController title="PaymentDetails" id="9jK-n0-Rmi" customClass="PaymentDetailsViewController" customModule="SIT206Ass2_215421142" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uc6-DG-CDZ"/>
                         <viewControllerLayoutGuide type="bottom" id="i71-Cp-03r"/>
@@ -1315,6 +1321,9 @@
                                         <integer key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="jJG-aN-8Ur" kind="show" identifier="lastSegue" id="aS7-Qo-42J"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1322,7 +1331,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZT-1R-DgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4284" y="1970"/>
+            <point key="canvasLocation" x="2876" y="1311"/>
+        </scene>
+        <!--Last View Controller-->
+        <scene sceneID="bkX-NQ-P7a">
+            <objects>
+                <viewController id="jJG-aN-8Ur" customClass="LastViewController" customModule="SIT206Ass2_215421142" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vZ5-yD-QRw"/>
+                        <viewControllerLayoutGuide type="bottom" id="eOg-T2-TMr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9io-gz-6lx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="Acg-DX-bbv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xqC-qG-ypu">
+                                <rect key="frame" x="16" y="246" width="343" height="236"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rFZ-A5-4PI">
+                                <rect key="frame" x="51" y="70" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Address" destination="xqC-qG-ypu" id="YV6-yK-Un5"/>
+                        <outlet property="Name" destination="rFZ-A5-4PI" id="Qy3-tR-T9p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rz9-pR-ZOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4128.8000000000002" y="1309.2953523238382"/>
         </scene>
         <!--Menu-->
         <scene sceneID="ZBS-Lo-7rl">
@@ -1354,6 +1407,8 @@
         <image name="Afternoon-coffee" width="640" height="1136"/>
         <image name="IMG_82601" width="600" height="800"/>
         <image name="Pretty-Cupcakes-cupcakes-32426889-500-500" width="500" height="500"/>
+        <image name="Restaurant-50" width="50" height="50"/>
+        <image name="Shopping Cart-26" width="26" height="26"/>
         <image name="SwissBFCake-PassionateAboutBaking" width="400" height="431"/>
         <image name="The-Process-of-Pastry-Laminating-for-Viennoiserie-Products" width="1000" height="600"/>
         <image name="christmascake" width="507" height="409"/>
@@ -1364,9 +1419,9 @@
         <image name="images-2" width="192" height="144"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="plN-OG-Blv"/>
-        <segue reference="NUj-oJ-vN9"/>
+        <segue reference="JcH-QO-lhJ"/>
         <segue reference="ibA-nW-vIr"/>
-        <segue reference="93Q-OK-yWT"/>
+        <segue reference="Etg-7i-hBd"/>
+        <segue reference="0jp-qJ-S0p"/>
     </inferredMetricsTieBreakers>
 </document>

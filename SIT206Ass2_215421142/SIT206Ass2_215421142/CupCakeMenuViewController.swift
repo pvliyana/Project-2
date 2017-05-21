@@ -27,26 +27,7 @@ class CupCakeMenuViewController: UIViewController {
     }
     
     
-    @IBAction func addItemOneToCart(_ sender: Any) {
-        
-           if (qtyOne.text != "")
-            {
-            performSegue(withIdentifier: "cartSegueOne", sender: self)
-                 //qtyOne.text = " "
-            }
-       
-        
-        }
-    
-    
-    @IBAction func addItemTwoToCart(_ sender: Any) {
-        if (qtyTwo.text != "")
-        {
-            performSegue(withIdentifier: "cartSegueTwo", sender: self)
-        }
-    }
-    
-
+   
     
       override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         

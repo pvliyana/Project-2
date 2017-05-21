@@ -26,22 +26,7 @@ class TartMenuViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    
-    @IBAction func addItemOneToCart(_ sender: Any) {
-        if (qtyOne.text != "")
-        {
-            performSegue(withIdentifier: "cartSegueOne", sender: self)
-            
-        }
-    }
-    
-    @IBAction func addItemTwoToCart(_ sender: Any) {
-        if (qtyTwo.text != "")
-        {
-            performSegue(withIdentifier: "cartSegueTwo", sender: self)
-        }
-
-    }
+ 
     
     
     

@@ -20,6 +20,9 @@
 		9BC3224E1EB2454000FF9EC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC3224C1EB2454000FF9EC6 /* Main.storyboard */; };
 		9BC322501EB2454100FF9EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC3224F1EB2454100FF9EC6 /* Assets.xcassets */; };
 		9BC322531EB2454200FF9EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC322511EB2454200FF9EC6 /* LaunchScreen.storyboard */; };
+		9BE2D7741ED221950089CC41 /* CustomerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2D7731ED221950089CC41 /* CustomerDetailsViewController.swift */; };
+		9BE2D7761ED2220B0089CC41 /* PaymentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2D7751ED2220B0089CC41 /* PaymentDetailsViewController.swift */; };
+		9BE2D7781ED2245F0089CC41 /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2D7771ED2245F0089CC41 /* LastViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		9BC3224F1EB2454100FF9EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BC322521EB2454200FF9EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BC322541EB2454200FF9EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BE2D7731ED221950089CC41 /* CustomerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerDetailsViewController.swift; sourceTree = "<group>"; };
+		9BE2D7751ED2220B0089CC41 /* PaymentDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentDetailsViewController.swift; sourceTree = "<group>"; };
+		9BE2D7771ED2245F0089CC41 /* LastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,9 @@
 				9B04BD0F1ED19D0700F58E6F /* TartMenuViewController.swift */,
 				9B04BD111ED19D2300F58E6F /* CakeMenuViewController.swift */,
 				9B04BD131ED19D3200F58E6F /* PastryMenuViewController.swift */,
+				9BE2D7731ED221950089CC41 /* CustomerDetailsViewController.swift */,
+				9BE2D7751ED2220B0089CC41 /* PaymentDetailsViewController.swift */,
+				9BE2D7771ED2245F0089CC41 /* LastViewController.swift */,
 			);
 			path = SIT206Ass2_215421142;
 			sourceTree = "<group>";
@@ -165,11 +174,14 @@
 				9B04BD121ED19D2300F58E6F /* CakeMenuViewController.swift in Sources */,
 				9BC3224B1EB2454000FF9EC6 /* ViewController.swift in Sources */,
 				9B8145B11ED16D8F002DA5DE /* NewViewController.swift in Sources */,
+				9BE2D7761ED2220B0089CC41 /* PaymentDetailsViewController.swift in Sources */,
 				9B04BD141ED19D3200F58E6F /* PastryMenuViewController.swift in Sources */,
 				9B108C311ECF60E7008C21A0 /* CartTableViewController.swift in Sources */,
 				9B108C331ECF6157008C21A0 /* CupCakeMenuViewController.swift in Sources */,
 				9B8145AF1ED15058002DA5DE /* CategoryMenuViewController.swift in Sources */,
 				9B04BD101ED19D0700F58E6F /* TartMenuViewController.swift in Sources */,
+				9BE2D7741ED221950089CC41 /* CustomerDetailsViewController.swift in Sources */,
+				9BE2D7781ED2245F0089CC41 /* LastViewController.swift in Sources */,
 				9BC322491EB2453F00FF9EC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
