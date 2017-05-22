@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class Item {
     var itemPrice : String
@@ -22,8 +23,9 @@ class Item {
 }
 
 class Utilities {
+    static var items : [ItemInfo] = []
     //static var dateFormatter = DateFormatter()
-    static var items : [Item] = []
+  /*  static var items : [Item] = []
     static func loadItems(){
         items = [
             Item(price : "$17", name: "cake",
@@ -32,4 +34,36 @@ class Utilities {
             
         ]
     }
+}*/
+
+//static var items: [ItemInfo] = []
+class func loadItems(){
+    let context = ( UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    do {
+        let req : NSFetchRequest<ItemInfo> = ItemInfo.fetchRequest()
+        items = try context.fetch(req)
+    } catch let err { print(err) }
+    
+    
+    if items.count == 0{
+        var item = ItemInfo(context: context)
+        item.itemPrice = "5"
+        item.itemName = "Cup Cake"
+        item.itemQty = "2"
+        items.append(item)
+        
+        item = ItemInfo(context: context)
+        item.itemPrice = "6"
+        item.itemName = "chocolate Cake"
+        item.itemQty = "2"
+        items.append(item)
+        
+        
+        try! context.save()
+        
+    }
+    
+}
+
 }
